@@ -1,0 +1,18 @@
+[package]
+name = "MB2-Bubble-Level"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cortex-m-rt = "0.7"
+critical-section-lock-mut = "0.1.2"
+embedded-hal = "1.0.0"
+lsm303agr = "1.1.0"
+microbit-v2 = "0.16"
+panic-rtt-target = "0.2"
+rtt-target = "0.6"
+tiny-led-matrix = "1.0.2"
+
+[dependencies.cortex-m]
+version = "0.7"
+features = ["inline-asm", "critical-section-single-core"]
